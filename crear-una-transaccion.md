@@ -11,7 +11,7 @@ Con este endpoint se inicializa una transacción a través de un método post ge
 #### Request initTransaction
 
 | **Variable** | **Requerida** | **Tipo** | **Descripción** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | x\_account\_id | Si | String | Corresponde al Token Service relacionado al servicio con el que deseas generar el cobro. |
 | x\_amount | Si | Number | Monto de la transacción. Admite decimales si la divisa utilizada los utiliza. |
 | x\_currency | SI | String | Divisa que se utilizará para la transacción. Ejemplo ; CLP, USD, BOB. |
@@ -22,6 +22,7 @@ Con este endpoint se inicializa una transacción a través de un método post ge
 | x\_url\_callback | SI | String | Dirección en donde se avisará de los cambios en la transacción de manera asincrónica a través de un método POST. |
 | x\_signature | SI | String | Mensaje Firmado. Por favor revisa la sección de [firmado](proceso-de-firmado.md#proceso) para saber como generarla. |
 | x\_shop\_country | SI | [iso-3166-1alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1) | Por ejemplo CL // US  |
+| x\_session\_id | SI | String | Identificador único de la sesión del usuario que realiza el pago. Se agrega como capa de seguridad para validar la transacción. |
 
 ### Response initTransaction.
 
