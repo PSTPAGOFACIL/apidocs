@@ -24,11 +24,11 @@ En los dashboards crearás los distintos servicios que usarás en la plataforma.
 
 ### Crear Transacción
 
-Para poder [crear una transacción](crear-una-transaccion.md#post-inittransaction) puedes usar los siguientes endpoints dependiendo del entorno al cual te quieras conectar. Todos los endpoints solo aceptan conexiones https. Recuerda revisar la sección de como [crear una transacción](crear-una-transaccion.md) para ver los datos necesarios para inicializar el pago.
+Para poder [crear una transacción](crear-una-transaccion.md#post-inittransaction) puedes usar los siguientes endpoints por POST dependiendo del entorno al cual te quieras conectar. Todos los endpoints solo aceptan conexiones https. Recuerda revisar la sección de como [crear una transacción](crear-una-transaccion.md) para ver los datos necesarios para inicializar el pago.
 
-* Desarrollo : https://gw-dev.pagofacil.cl
-* Beta : https://gw-beta.pagofacil.cl 
-* Producción : https://gw.pagofacil.cl
+* Desarrollo : https://gw-dev.pagofacil.cl/initTransaction
+* Beta : https://gw-beta.pagofacil.cl/initTransaction
+* Producción : https://gw.pagofacil.cl/initTransaction
 
 
 
