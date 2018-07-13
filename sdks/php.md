@@ -60,11 +60,32 @@ Al realizar la llamada a initTransaction el sistema redirecciona a pago fácil p
 Para verificar la firma se puede hacer uso de la funcion validate\(\) de la transacción, a esta función se le pasa por parámetros un arreglo con los datos recibidos del POST, por ejemplo:
 
 ```text
+$transaction = new Transaction();
+$transaction->setToken(''); // Se debe colocar el Token Secret entregado por Pago Fácil
+
 if($transaction->validate($_POST)){
   error_log('TRANSACCION CORRECTA');
 }else{
   error_log('ERROR FIRMA');
 }
+```
+
+Luego de realizar el validate se debe realizar una verificación del monto recibido para tener mayor seguridad de la respuesta, así como cualquier otra verificación que se desee realizar.
+
+Si la respuesta esta OK el sistema enviara a la url especificada en url\_complete, una vez en esa dirección se debe verificar nuevamente que la firma y monto correspondan, por ejemplo:
+
+```text
+$transaction = new Transaction();
+$transaction->setToken(''); // Se debe colocar el Token Secret entregado por Pago Fácil
+
+if($transaction->validate($_POST)){
+  echo 'Orden recibida exitosamente';
+  error_log('TRANSACCION CORRECTA');
+}else{
+  echo 'Error en firma';
+  error_log('ERROR FIRMA');
+}
+
 ```
 
 Luego de realizar el validate se debe realizar una verificación del monto recibido para tener mayor seguridad de la respuesta, así como cualquier otra verificación que se desee realizar.
