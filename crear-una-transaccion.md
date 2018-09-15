@@ -11,7 +11,7 @@ Con este endpoint se inicializa una transacción a través de un método post ge
 #### Request initTransaction
 
 | **Variable** | **Requerida** | **Tipo** | **Descripción** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | x\_account\_id | Si | String | Corresponde al Token Service relacionado al servicio con el que deseas generar el cobro. |
 | x\_amount | Si | Number | Monto de la transacción. Admite decimales si la divisa utilizada los utiliza. |
 | x\_currency | SI | String | Divisa que se utilizará para la transacción. Ejemplo ; CLP, USD, BOB. |
@@ -29,7 +29,7 @@ Con este endpoint se inicializa una transacción a través de un método post ge
 El response se ejecuta en dos ocasiones; como callback por detrás del flujo de pago hacia la url designada con este fin, además de al volver a la url complete también designada. Si bien no es necesario que verifiques la información en los dos momentos, lo recomendamos.
 
 | Variable | Tipo | Descripción |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | x\_account\_id | String | Corresponde al Token Service relacionado al servicio con el que deseas generar el cobro. |
 | x\_amount | Number | El monto asociado a la orden. Puede ser decimal en caso de que el currency lo permita. |
 | x\_currency | String | Divisa que se utilizará para la transacción |
