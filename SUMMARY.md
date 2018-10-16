@@ -7,3 +7,8 @@
 * [SDKs](sdks/README.md)
   * [PHP](sdks/php.md)
 
+## API Transaccional
+
+* [Login](api-transaccional/login.md)
+* [Detalles de la Transacción](api-transaccional/detalles-de-la-transaccion.md)
+
