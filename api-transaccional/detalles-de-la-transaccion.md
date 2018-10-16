@@ -12,7 +12,7 @@ Get Transaction Details
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+Obtenemos los datos de la transacción exitosa. Los datos retornados dependen del tipo de método de pago que se haya ocupado.
 {% endapi-method-description %}
 
 {% api-method-spec %}
