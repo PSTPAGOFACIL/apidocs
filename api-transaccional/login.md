@@ -19,7 +19,7 @@ description: >-
 {% api-method-description %}
 Este endpoint retorna un token valido por 24 horas con el que se pueden realizar las llamadas al resto de los endpoints del API. Sin este token no se pueden acceder a los endpoints.  
   
-Este endpoint tiene un 
+Los parámetros deben ser enviados a través de un JSON.
 {% endapi-method-description %}
 
 {% api-method-spec %}
