@@ -13,7 +13,7 @@ createToken
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+Este endpoint permite crear un Access Token con el que podemos loguearnos en el API y crear un Token JWT.
 {% endapi-method-description %}
 
 {% api-method-spec %}
