@@ -14,5 +14,6 @@
 
 ## API Transaccional
 
+* [Transacciones // Ordenes](api-transaccional/transacciones-ordenes.md)
 * [Detalles de la Transacción](api-transaccional/detalles-de-la-transaccion.md)
 
