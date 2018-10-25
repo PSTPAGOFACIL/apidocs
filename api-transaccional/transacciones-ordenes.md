@@ -4,7 +4,7 @@ description: Acá podrás encontrar todas las APIs relacionadas a las transaccio
 
 # Transacciones // Ordenes
 
-{% api-method method="post" host="https://api.pgf.cl" path="/create" %}
+{% api-method method="post" host="https://api.pgf.cl" path="/trxs/create" %}
 {% api-method-summary %}
 Create Transaction
 {% endapi-method-summary %}
