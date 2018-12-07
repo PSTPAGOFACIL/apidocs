@@ -228,8 +228,12 @@ Token JWT de autorización
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="codigo" type="string" required=true %}
-Código para desactivar, se encuentra en el response de obtener las suscripciones
+{% api-method-parameter name="boton\_token" type="string" required=true %}
+Token del botón de suscripción
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="token" type="string" required=true %}
+Token de la suscripción
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -430,6 +434,146 @@ Código al cual se va a registrar la tarjeta, este es devuelto por el método ve
     "success": false,
     "errorMessage": "No se pudo completar la transaccion",
     "errorCode": 3
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Obtener transacciones del usuario
+
+Obtiene todas las transacciones del usuario
+
+{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="transactions/getAll" %}
+{% api-method-summary %}
+Obtener transacciones
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Token JWT de autorización 
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="email" type="string" required=true %}
+Email del usuario
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "message": "Se encontraron transacciones",
+    "trxs": [
+        {
+            "hash": "386713e8-3b3a-4781-9976-8de58904cd5b",
+            "idTrx": "3863",
+            "timestamp": 1544206599671,
+            "amount": "15000",
+            "email": "stephanie@pagofacil.cl",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2MzoxNTMwOTM5",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "state": "COMPLETADA"
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    error: "Error al obtener las transacciones del usuario"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Obtener transacciones por usuario y suscripción
+
+Permite obtener las transacciones de una suscripción
+
+{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="transactions/getBySubscription" %}
+{% api-method-summary %}
+Obtener Transacciones por Suscripción
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Token JWT de autorización
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="idSubscription" type="string" required=true %}
+Token de la suscripción
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email" type="string" required=true %}
+Email del usuario
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "message": "Se encontraron transacciones",
+    "trxs": [
+        {
+            "hash": "386713e8-3b3a-4781-9976-8de58904cd5b",
+            "idTrx": "3863",
+            "timestamp": 1544206599671,
+            "amount": "15000",
+            "email": "stephanie@pagofacil.cl",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2MzoxNTMwOTM5",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "state": "COMPLETADA"
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    error: "Error al obtener las transacciones del usuario"
 }
 ```
 {% endapi-method-response-example %}
