@@ -236,7 +236,7 @@ var options = { method: 'POST',
   url: 'https://api.pgf.cl/loginToken',
   headers: 
    { 'Cache-Control': 'no-cache',
-     Authorization: 'Bearer e0a7eefa-de1a-4507-82f5-eb9ec482fe2a' } };
+     Authorization: 'Bearer TUACCESSTOKEN' } };
 
 request(options, function (error, response, body) {
   if (error) throw new Error(error);
