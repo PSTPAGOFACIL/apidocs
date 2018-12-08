@@ -302,14 +302,19 @@ Email del usuario
 
 ```
 {
-    responseCode: 2,
-    message : "Se encontraron tarjetas",
-    existe: true,
-    tarjetas : [
+    "responseCode": 2,
+    "message": "Se encontraron tarjetas",
+    "existe": true,
+    "tarjetas": [
         {
-            token : "fc27a987-3999-4b5b-b24e-b210c0fee8a0",
-            usuario_oc_token : "059a21be-755b-4d08-9998-f70148f219e2",
-            card : "6623"
+            "token": "5a3491f5-d90d-4085-901b-006bfac16ee2",
+            "card_type": "Visa",
+            "last4CardDigits": "6623"
+        },
+        {
+            "token": "6a0a6931-af7c-4818-ada2-fff0d81e88ef",
+            "card_type": "Visa",
+            "last4CardDigits": "6623"
         }
     ]
 }
