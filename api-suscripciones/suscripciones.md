@@ -501,16 +501,52 @@ Email del usuario
 ```
 {
     "message": "Se encontraron transacciones",
+    "Count": 5,
     "trxs": [
+        {
+            "hash": "9c935b82-92d2-4828-ac17-bba70e5b38bd",
+            "idTrx": "3866",
+            "timestamp": 1544212415130,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2NjozMzM3NTMz",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
+        {
+            "hash": "7853b79c-439f-47ba-be25-6199f5bde4af",
+            "idTrx": "3865",
+            "timestamp": 1544211165011,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2NTozNjQzNjY1",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
         {
             "hash": "386713e8-3b3a-4781-9976-8de58904cd5b",
             "idTrx": "3863",
             "timestamp": 1544206599671,
             "amount": "15000",
-            "email": "stephanie@pagofacil.cl",
             "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2MzoxNTMwOTM5",
             "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
-            "state": "COMPLETADA"
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
+        {
+            "hash": "35c2803c-9373-4c0c-9f4a-866259843891",
+            "idTrx": "3867",
+            "timestamp": 1544212511335,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2Nzo2MDkwMDM5",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
+        {
+            "hash": "838371a7-f297-4994-b41a-90634d3c0f2d",
+            "idTrx": "3864",
+            "timestamp": 1544210647370,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2NDo0MjIyMzc5",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
         }
     ]
 }
@@ -573,16 +609,52 @@ Email del usuario
 ```
 {
     "message": "Se encontraron transacciones",
+    "Count": 5,
     "trxs": [
+        {
+            "hash": "9c935b82-92d2-4828-ac17-bba70e5b38bd",
+            "idTrx": "3866",
+            "timestamp": 1544212415130,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2NjozMzM3NTMz",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
+        {
+            "hash": "7853b79c-439f-47ba-be25-6199f5bde4af",
+            "idTrx": "3865",
+            "timestamp": 1544211165011,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2NTozNjQzNjY1",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
         {
             "hash": "386713e8-3b3a-4781-9976-8de58904cd5b",
             "idTrx": "3863",
             "timestamp": 1544206599671,
             "amount": "15000",
-            "email": "stephanie@pagofacil.cl",
             "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2MzoxNTMwOTM5",
             "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
-            "state": "COMPLETADA"
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
+        {
+            "hash": "35c2803c-9373-4c0c-9f4a-866259843891",
+            "idTrx": "3867",
+            "timestamp": 1544212511335,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2Nzo2MDkwMDM5",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        },
+        {
+            "hash": "838371a7-f297-4994-b41a-90634d3c0f2d",
+            "idTrx": "3864",
+            "timestamp": 1544210647370,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=Mzg2NDo0MjIyMzc5",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-5863a7558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
         }
     ]
 }
