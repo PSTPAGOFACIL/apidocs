@@ -401,7 +401,7 @@ Token del botón de suscripción
 
 Registra una tarjeta del usuario
 
-{% api-method method="get" host="https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/registrar" path="/:codigo\_comercio/:email" %}
+{% api-method method="post" host="https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/registrar" path="" %}
 {% api-method-summary %}
 Registrar tarjeta
 {% endapi-method-summary %}
@@ -424,6 +424,24 @@ Código al cual se va a registrar la tarjeta, este es devuelto por el método ve
 {% endapi-method-request %}
 
 {% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{ 
+  success: 'true',
+  usuario_token: '094b1dfc-7472-4f57-9122-a6b8f45cc52e',
+  tokenSecret: '0bcf51f3-c166-4efa-abae-70c10090ab7d',
+  username: 'holahola12344testcom',
+  message: 'Inscripcion realizada con exito',
+  errorCode: '0' 
+}
+
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
 
