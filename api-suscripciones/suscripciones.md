@@ -418,6 +418,10 @@ Registrar tarjeta
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+{% api-method-parameter name="callbackUrl" type="string" required=true %}
+Url a la cual se va a redireccionar luego de agregar la tarjeta
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="email" type="string" required=true %}
 Email del usuario
 {% endapi-method-parameter %}
@@ -561,6 +565,64 @@ Email del usuario
 ```
 {
     error: "Error al obtener las transacciones del usuario"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Remover Tarjetas
+
+Permite remover una tarjeta
+
+{% api-method method="post" host="https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/remove" path="" %}
+{% api-method-summary %}
+Remover Tarjeta
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="callbackUrl" type="string" required=true %}
+Url a la que se va a redireccionar luego de eliminar la tarjeta
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="token" type="string" required=true %}
+Token de la tarjeta
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{ 
+    success: true, 
+    errorCode: 0
+}
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+{ 
+    success: false, 
+    errorCode: 3
 }
 ```
 {% endapi-method-response-example %}
