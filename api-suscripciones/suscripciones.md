@@ -56,6 +56,7 @@ Email del usuario
             "estado_cobro": null,
             "descripcion_boton": "test",
             "recurrencia": "12",
+            "boton_token": "15dcbdfd-ea43-4573-b74a-be68f26485ec",
             "codigo": "ZjgwOTdhMTUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWUyYjQ4ZjY0N2I3NQ=="
         },
         {
@@ -64,6 +65,7 @@ Email del usuario
             "estado_cobro": null,
             "descripcion_boton": "Desde Dashboard",
             "recurrencia": "20",
+            "boton_token": "15dcbdfd-ea43-4573-b74a-be68f26485ec",
             "codigo": "ZjgwOTdhMTUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOjc3ZDgyMDRmLTQ3NjctNDExMy1iMzQ5LTQ3ZmU3YmZiOWEzYg=="
         }
     ]
