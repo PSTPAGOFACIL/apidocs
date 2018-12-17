@@ -1,5 +1,5 @@
 ---
-description: Conexiones a la API de suscripciones y de registros de tarjetas
+description: Conexiones a la API de suscripciones y de registros de tarjetas.
 ---
 
 # Suscripciones
@@ -791,6 +791,52 @@ Código de verificación de la tarjeta
 {
     error : "Error al obtener tarjeta"
 }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Realizar pago
+
+{% api-method method="post" host="https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/" path="authorization" %}
+{% api-method-summary %}
+Realizar pago
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="monto" type="integer" required=true %}
+Monto a cobrar
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="username" type="string" required=true %}
+Username del usuario
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="tbk\_user" type="string" required=true %}
+Tbk del usuario
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="codigo\_comercio" type="string" required=true %}
+Codigo de comercio
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
