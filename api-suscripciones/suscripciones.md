@@ -10,7 +10,135 @@ Desarrollo Suscripciones: [https://0g3bkdv10a.execute-api.us-west-2.amazonaws.co
 
 Desarrollo Registro: [https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/](https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/)
 
+### Login
 
+Permite realizar login de los usuarios
+
+{% api-method method="post" host=" https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="login" %}
+{% api-method-summary %}
+Login
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="password" type="string" required=true %}
+password del usuario
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="username" type="string" required=true %}
+Username del usuario
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "access_token_jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NwYWpkei5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWMwYzU5MGJkZjNiMGU2YjdjNDMwZWI1IiwiYXVkIjpbImFwcC51c3Vhcmlvcy5zdXNjcmlwY2lvbmVzLnBmYXV0aDAuY29tIl0sImlhdCI6MTU0NTI1Mzg1MiwiZXhwIjoxNTQ1MzQwMjUyLCJhenAiOiJKSVJkM1N4S3FPTE95UHJ0aHc5dUt1M0tEN215RnRkZCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUiLCJndHkiOiJwYXNzd29yZCJ9.J_Zm_GiPcDvpDn9nBr9Lasddddd",
+    "expires_in": 86400,
+    "token_type": "Bearer"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "error": "Wrong email or password."
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Registrar Usuario
+
+Permite registrar un usuario
+
+{% api-method method="post" host=" https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="registrar" %}
+{% api-method-summary %}
+Registrar usuario
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="username" type="string" required=true %}
+username del usuario
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="password" type="string" required=true %}
+contraseña del usuario
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email" type="string" required=true %}
+Email del usuario
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "message": "Se registro el usuario",
+    "usuatio_token": "f8f75799-1b87-4161-9d3a-55aba8da7123"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    statusCode: 400,
+    error: "<Nombre del error>",
+    message: "<Mensaje de error>"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=409 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    statusCode: 409,
+    message: "Usuario ya existe"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ### Obtener suscripciones
 
