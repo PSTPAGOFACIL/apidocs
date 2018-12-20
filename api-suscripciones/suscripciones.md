@@ -62,17 +62,13 @@ Username del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Registrar Usuario
-
-Permite registrar un usuario
-
 {% api-method method="post" host=" https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="registrar" %}
 {% api-method-summary %}
 Registrar usuario
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Permite registrar un usuario en la plataforma
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -98,7 +94,7 @@ Email del usuario
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "message": "Se registro el usuario",
     "usuatio_token": "f8f75799-1b87-4161-9d3a-55aba8da7123"
@@ -111,7 +107,7 @@ Email del usuario
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     statusCode: 400,
     error: "<Nombre del error>",
@@ -125,7 +121,7 @@ Email del usuario
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     statusCode: 409,
     message: "Usuario ya existe"
@@ -135,10 +131,6 @@ Email del usuario
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-### Obtener suscripciones
-
-Permite obtener todas las suscripciones de un usuario
 
 {% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/subscriptions/" path="getAll" %}
 {% api-method-summary %}
@@ -170,7 +162,7 @@ Email del usuario
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "message": "Suscripciones encontradas con exito",
     "suscripciones": [
@@ -180,17 +172,8 @@ Email del usuario
             "estado_cobro": null,
             "descripcion_boton": "test",
             "recurrencia": "12",
-            "boton_token": "15dcbdfd-ea43-4573-b74a-be68f26485ec",
-            "codigo": "ZjgwOTdhMTUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWUyYjQ4ZjY0N2I3NQ=="
-        },
-        {
-            "email": "stephanie@pagofacil.cl",
-            "estado": "ACTIVO",
-            "estado_cobro": null,
-            "descripcion_boton": "Desde Dashboard",
-            "recurrencia": "20",
-            "boton_token": "15dcbdfd-ea43-4573-b74a-be68f26485ec",
-            "codigo": "ZjgwOTdhMTUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOjc3ZDgyMDRmLTQ3NjctNDExMy1iMzQ5LTQ3ZmU3YmZiOWEzYg=="
+            "boton_token": "132cbdfd-ea43-4573-b74a-be68f26485ec",
+            "codigo": "ZjgwOTdg4rUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWUyYjQ4ZjY0N2I3NQ=="
         }
     ]
 }
@@ -202,7 +185,7 @@ Email del usuario
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     error: "Error al obtener las suscripciones por email"
 }
@@ -212,9 +195,7 @@ Email del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Crear Suscripción
-
-Permite crear una suscripción
+* Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 
 {% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/subscriptions" path="/create" %}
 {% api-method-summary %}
