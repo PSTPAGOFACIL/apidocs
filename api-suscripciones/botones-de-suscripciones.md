@@ -12,17 +12,13 @@ Desarrollo: [https://api-dev.pgf.cl/](https://api-dev.pgf.cl/subscription/create
 
 Para crear un nuevo botón de suscripciones primero se debe hacer login como comercio. Para tener mayor información sobre como realizar el login mediante API revisar la documentación de [Login](../api-usuario/login.md#login)
 
-### Crear Botón
-
-Este método permite la creación de un botón de suscripciones, el botón puede ser de tipo recurrente o de tipo servicio.
-
 {% api-method method="post" host="https://api-dev.pgf.cl/subscription/" path="create-button" %}
 {% api-method-summary %}
 Crear Botón
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Este método permite la creación de un botón de suscripciones, el botón puede ser de tipo recurrente o de tipo servicio
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -109,6 +105,78 @@ Token que se genera al hacer llamado a la función de crear token. Para mas info
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+* Para más información sobre como obtener el token de autorización revisar [Login](../api-usuario/login.md#login-1)
+* Para más información sobre como obtener el access\_token revisar [Create Token](../api-usuario/tokens.md#createtoken)
+
+{% api-method method="post" host="https://api-dev.pgf.cl/subscription/" path="getAllButtons" %}
+{% api-method-summary %}
+Obtener Botones de suscripción
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Obtiene los botones de suscripción 
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Token JWT de autorización
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="idService" type="string" required=true %}
+ID del servicio en Pago Fácil
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "responseCode": 2,
+    "message": "Botones encontrados",
+    "botones": [
+        {
+            "dia_pago": null,
+            "tipo": "Servicio",
+            "token": "912ba7c5-e756-40af-ae8b-619b08964e0a",
+            "idService": "215",
+            "timestamp": 1545160833551,
+            "payment_recurrence": null,
+            "amount": null,
+            "description": "Testr",
+            "estado": "ACTIVO",
+            "access_token": "78e313660-6c24-4d52-b4f7-260907b53cf5"
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    error: "<Mensaje de error>"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+* Para más información sobre como obtener el token de autorización revisar [Login](../api-usuario/login.md#login-1)
 
 
 
