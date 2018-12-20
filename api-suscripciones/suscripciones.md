@@ -10,24 +10,20 @@ Desarrollo Suscripciones: [https://0g3bkdv10a.execute-api.us-west-2.amazonaws.co
 
 Desarrollo Registro: [https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/](https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/)
 
-### Login
-
-Permite realizar login de los usuarios
-
 {% api-method method="post" host=" https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="login" %}
 {% api-method-summary %}
 Login
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Login de Usuarios en la plataforma
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="password" type="string" required=true %}
-password del usuario
+Password del usuario
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="username" type="string" required=true %}
@@ -396,76 +392,6 @@ Token de la suscripción
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Obtener tarjetas
-
-Obtiene todas las tarjetas asociadas al usuario
-
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/user" path="/getTarjetas" %}
-{% api-method-summary %}
-Obtener tarjetas
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Token JWT de autorización
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="email" type="string" required=true %}
-Email del usuario
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "responseCode": 2,
-    "message": "Se encontraron tarjetas",
-    "existe": true,
-    "tarjetas": [
-        {
-            "token": "5a3491f5-d90d-4085-901b-006bfac16ee2",
-            "card_type": "Visa",
-            "last4CardDigits": "6623"
-        },
-        {
-            "token": "6a0a6931-af7c-4818-ada2-fff0d81e88ef",
-            "card_type": "Visa",
-            "last4CardDigits": "6623"
-        }
-    ]
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    error: "Error al realizar la solicitud"
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
 ### Verificación de suscripción
 
 Verifica si un usuario ya esta suscrito a un botón específico
@@ -525,72 +451,6 @@ Token del botón de suscripción
     message : "Usuario no existe",
     existe: false,
     comercio: "123123123"
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-### Registrar Tarjeta
-
-Registra una tarjeta del usuario
-
-{% api-method method="post" host="https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/registrar" path="" %}
-{% api-method-summary %}
-Registrar tarjeta
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="callbackUrl" type="string" required=true %}
-Url a la cual se va a redireccionar luego de agregar la tarjeta
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="email" type="string" required=true %}
-Email del usuario
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="codigo\_comercio" type="string" required=true %}
-Código al cual se va a registrar la tarjeta, este es devuelto por el método verificar usuario botón cuando el usuario no esta registrado
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{ 
-  success: 'true',
-  usuario_token: '094b1dfc-7472-4f57-9122-a6b8f45cc52e',
-  tokenSecret: '0bcf51f3-c166-4efa-abae-70c10090ab7d',
-  username: 'holahola12344testcom',
-  message: 'Inscripcion realizada con exito',
-  errorCode: '0' 
-}
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "success": false,
-    "errorMessage": "No se pudo completar la transaccion",
-    "errorCode": 3
 }
 ```
 {% endapi-method-response-example %}
@@ -702,64 +562,6 @@ Email del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Remover Tarjetas
-
-Permite remover una tarjeta
-
-{% api-method method="post" host="https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/remove" path="" %}
-{% api-method-summary %}
-Remover Tarjeta
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="callbackUrl" type="string" required=true %}
-Url a la que se va a redireccionar luego de eliminar la tarjeta
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="token" type="string" required=true %}
-Token de la tarjeta
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{ 
-    success: true, 
-    errorCode: 0
-}
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-{ 
-    success: false, 
-    errorCode: 3
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
 ### Obtener transacciones por usuario y suscripción
 
 Permite obtener las transacciones de una suscripción
@@ -861,63 +663,6 @@ Email del usuario
 ```
 {
     error: "Error al obtener las transacciones del usuario"
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-### Obtener estado de tarjeta
-
-Permite verificar el estado de una tarjeta mediante un código de verificación
-
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/user" path="/estadoTarjeta" %}
-{% api-method-summary %}
-Obtener estado de tarjeta
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Token JWT de autorización
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="codigo" type="string" required=true %}
-Código de verificación de la tarjeta
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "message": "Se encontro la tarjeta",
-    "estado": "ACTIVO"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    error : "Error al obtener tarjeta"
 }
 ```
 {% endapi-method-response-example %}

@@ -19,5 +19,7 @@
 
 ## API SUSCRIPCIONES
 
+* [Botones de suscripciones](api-suscripciones/botones-de-suscripciones.md)
 * [Suscripciones](api-suscripciones/suscripciones.md)
+* [Tarjetas](api-suscripciones/tarjetas.md)
 
