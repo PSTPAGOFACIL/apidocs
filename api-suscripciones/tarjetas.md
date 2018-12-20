@@ -288,5 +288,7 @@ Monto a cobrar.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
+* Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
+* Para más información sobre como obtener el código de verificación revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
+* Para más información sobre como obtener el token de suscripción revisar[ Obtener Suscripciones](suscripciones.md#obtener-suscripciones)
 

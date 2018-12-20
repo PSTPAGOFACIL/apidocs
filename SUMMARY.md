@@ -22,4 +22,5 @@
 * [Botones de suscripciones](api-suscripciones/botones-de-suscripciones.md)
 * [Suscripciones](api-suscripciones/suscripciones.md)
 * [Tarjetas](api-suscripciones/tarjetas.md)
+* [Transacciones](api-suscripciones/transacciones.md)
 
