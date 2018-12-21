@@ -8,6 +8,15 @@ description: Conexiones para administrar las tarjetas de los usuarios
 
 Desarrollo:  [https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/](https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/) 
 
+### Tarjetas de Prueba transbank
+
+|  |  |
+| :--- | :--- |
+| Numero de tarjeta | 4051885600446623 |
+| Año de expiración | Cualquiera |
+| Mes de Expiración | Cualquiera |
+| CVV | 123 |
+
 {% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/ " path="user/registrar-tarjeta" %}
 {% api-method-summary %}
 Registrar Tarjeta
