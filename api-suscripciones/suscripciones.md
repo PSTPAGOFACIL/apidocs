@@ -25,7 +25,7 @@ Password del usuario
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="username" type="string" required=true %}
-Username del usuario
+Username o email del usuario
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
