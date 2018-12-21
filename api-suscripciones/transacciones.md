@@ -104,8 +104,22 @@ Token de la suscripción
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "message": "Se encontraron transacciones",
+    "Count": 1,
+    "trxs": [
+        {
+            "hash": "9c935b82-92d2-4828-a117-bba70e5b38bd",
+            "idTrx": "3866111",
+            "timestamp": 1544212415130,
+            "amount": "15000",
+            "payUrl": "https://gw-dev.pagofacil.cl/payTransaction/?Authorization=M1g2NjozMzM3NTMz",
+            "idSubcription": "a6e4ffc9-e595-4e10-8bb7-586317558422",
+            "subscription": "Nuevo boton de suscripcion recurrente"
+        }
+    ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
