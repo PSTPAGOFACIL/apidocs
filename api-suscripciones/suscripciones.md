@@ -165,6 +165,7 @@ Email del usuario
     "message": "Suscripciones encontradas con exito",
     "suscripciones": [
         {
+            "token": "a6e4ffc9-e595-4e10-8bb7-5863a7558152",
             "email": "stephanie@pagofacil.cl",
             "estado": "SIN ACTIVAR",
             "estado_cobro": null,
