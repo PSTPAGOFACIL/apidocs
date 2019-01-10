@@ -6,7 +6,11 @@ description: Conexiones para administrar las tarjetas de los usuarios
 
 ### Endpoints
 
-Desarrollo:  [https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/](https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/) 
+Producción: [ https://api-app.pgf.cl/](%20https://api-app.pgf.cl/)
+
+Beta: [ https://api-app-beta.pgf.cl/](%20https://api-app-beta.pgf.cl/)
+
+Desarrollo: [ ](%20https://api-app.pgf.cl/)[ https://api-app-dev.pgf.cl/](%20https://api-app.pgf.cl/)
 
 ### Tarjetas de Prueba transbank
 
@@ -17,7 +21,7 @@ Desarrollo:  [https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/](https
 | Mes de Expiración | Cualquiera |
 | CVV | 123 |
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/ " path="user/registrar-tarjeta" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/" path="user/registrar-tarjeta" %}
 {% api-method-summary %}
 Registrar Tarjeta
 {% endapi-method-summary %}
@@ -108,7 +112,7 @@ Token de la tarjeta
 
 * Para más información sobre como obtener el token de la tarjeta revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/user/" path="getTarjetas" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/user/" path="getTarjetas" %}
 {% api-method-summary %}
 Obtener Tarjetas
 {% endapi-method-summary %}
@@ -179,7 +183,7 @@ Email del usuario
 
 * Para tener más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/user" path="/estadoTarjeta" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/user" path="/estadoTarjeta" %}
 {% api-method-summary %}
 Estado de tarjeta
 {% endapi-method-summary %}
@@ -235,7 +239,7 @@ Código de verificación de la tarjeta
 * Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 * Para mas información sobre como obtener el código de verificación revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/user" path="/cobrar" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/user" path="/cobrar" %}
 {% api-method-summary %}
 Realizar cobro
 {% endapi-method-summary %}

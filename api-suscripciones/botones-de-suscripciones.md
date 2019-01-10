@@ -6,13 +6,15 @@ description: Conexiones para administrar los botones de suscripciones
 
 ### Endpoints
 
+Producción: [https://api.pgf.cl](https://api.pgf.cl)
+
 Desarrollo: [https://api-dev.pgf.cl/](https://api-dev.pgf.cl/subscription/create-button)
 
 ### Login
 
 Para crear un nuevo botón de suscripciones primero se debe hacer login como comercio. Para tener mayor información sobre como realizar el login mediante API revisar la documentación de [Login](../api-usuario/login.md#login)
 
-{% api-method method="post" host="https://api-dev.pgf.cl/subscription/" path="create-button" %}
+{% api-method method="post" host="https://api.pgf.cl/subscription/" path="create-button" %}
 {% api-method-summary %}
 Crear Botón
 {% endapi-method-summary %}
@@ -109,7 +111,7 @@ Token que se genera al hacer llamado a la función de crear token. Para mas info
 * Para más información sobre como obtener el token de autorización revisar [Login](../api-usuario/login.md#login-1)
 * Para más información sobre como obtener el access\_token revisar [Create Token](../api-usuario/tokens.md#createtoken)
 
-{% api-method method="post" host="https://api-dev.pgf.cl/subscription/" path="getAllButtons" %}
+{% api-method method="post" host="https://api.pgf.cl/subscription/" path="getAllButtons" %}
 {% api-method-summary %}
 Obtener Botones de suscripción
 {% endapi-method-summary %}

@@ -6,9 +6,13 @@ description: Conexiones a la API de suscripciones y de registros de tarjetas.
 
 ### Endpoints
 
-Desarrollo Suscripciones: [https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/](https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/) 
+Producción: [https://api-app.pgf.cl](https://api-app.pgf.cl)
 
-{% api-method method="post" host=" https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="login" %}
+Beta: [https://api-app-beta.pgf.cl](https://api-app-beta.pgf.cl)
+
+Desarrollo Suscripciones: [https//api-app-dev.pgf.cl](https://api-app-dev.pgf.cl)
+
+{% api-method method="post" host=" https://api-app.pgf.cl/" path="login" %}
 {% api-method-summary %}
 Login
 {% endapi-method-summary %}
@@ -60,7 +64,7 @@ Username o email del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host=" https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="registrar" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/" path="registrar" %}
 {% api-method-summary %}
 Registrar usuario
 {% endapi-method-summary %}
@@ -130,7 +134,7 @@ Email del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/subscriptions/" path="getAll" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/subscriptions/" path="getAll" %}
 {% api-method-summary %}
 Obtener Suscripciones
 {% endapi-method-summary %}
@@ -196,7 +200,7 @@ Email del usuario
 
 * Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/subscriptions" path="/create" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/subscriptions" path="/create" %}
 {% api-method-summary %}
 Crear suscripción 
 {% endapi-method-summary %}
@@ -255,7 +259,7 @@ Token del botón al cual va a estar asociada la suscripción
 * Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 * Para más información sobre como obtener el boton\_token revisar [Obtener Botones](botones-de-suscripciones.md#obtener-botones-de-suscripcion)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/subscriptions" path="/activar" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/subscriptions" path="/activar" %}
 {% api-method-summary %}
 Activar suscripción
 {% endapi-method-summary %}
@@ -315,7 +319,7 @@ Token de la suscripción
 * Para más información sobre como obtener usuario\_oc\_token revisar[ Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
 * Para más información sobre como obtener el token de la suscripción revisar [Obtener Suscripciones](suscripciones.md#obtener-suscripciones)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/subscriptions" path="/desactivar" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/subscriptions" path="/desactivar" %}
 {% api-method-summary %}
 Desactivar suscripción
 {% endapi-method-summary %}
@@ -375,7 +379,7 @@ Token de la suscripción
 * Para más información sobre como obtener el boton\_token revisar [Obtener Botones](botones-de-suscripciones.md#obtener-botones-de-suscripcion)
 * Para más información sobre como obtener el token de la suscripción revisar[ Obtener Suscripciones](suscripciones.md#obtener-suscripciones)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/user" path="/verificar-usuario-boton" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/user" path="/verificar-usuario-boton" %}
 {% api-method-summary %}
 Verificar usuario y botón
 {% endapi-method-summary %}

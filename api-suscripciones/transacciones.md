@@ -1,10 +1,10 @@
 ---
-description: Conexxiones para obtener las transacciones de los usuarios
+description: Conexiones para obtener las transacciones de los usuarios
 ---
 
 # Transacciones
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="transactions/getAll" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/" path="transactions/getAll" %}
 {% api-method-summary %}
 Obtener Transacciones
 {% endapi-method-summary %}
@@ -70,7 +70,7 @@ Transacciones del usuario
 
 * Para más información sobre como obtener el token revisar [Login](suscripciones.md#login)
 
-{% api-method method="post" host="https://0g3bkdv10a.execute-api.us-west-2.amazonaws.com/dev/" path="transactions/getBySubscription" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/" path="transactions/getBySubscription" %}
 {% api-method-summary %}
 Obtener transacciones por suscripción
 {% endapi-method-summary %}
