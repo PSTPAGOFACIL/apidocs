@@ -73,7 +73,7 @@ Permite registrar un usuario en la plataforma
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="username" type="string" required=true %}
-username del usuario
+username del usuario \(máximo 100 caracteres\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="password" type="string" required=true %}
