@@ -176,6 +176,7 @@ Email del usuario
             "descripcion_boton": "test",
             "recurrencia": "12",
             "boton_token": "132cbdfd-ea43-4573-b74a-be68f26485ec",
+            "tarjeta_token": "324ht5fr-hy67-8876-fr43-ygt566485o9",
             "codigo": "ZjgwOTdg4rUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWUyYjQ4ZjY0N2I3NQ=="
         }
     ]
