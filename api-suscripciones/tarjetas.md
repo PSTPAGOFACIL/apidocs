@@ -27,7 +27,7 @@ Registrar Tarjeta
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Permite registrar una tarjeta
+Permite registrar una tarjeta. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -56,6 +56,16 @@ Código de comercio al cual se asociara la tarjeta. Este código se puede obtene
 {% endapi-method-request %}
 
 {% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
 
@@ -72,7 +82,7 @@ Código de comercio al cual se asociara la tarjeta. Este código se puede obtene
 * Para más información sobre como obtener el código de comercio revisar [Verificar Usuario Botón](suscripciones.md#verificar-usuario-y-boton)
 * Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 
-{% api-method method="post" host="https://api-app.pgf.cl/prod​/user/" path="remove" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod​/user/" path="remove-tarjeta" %}
 {% api-method-summary %}
 Remover Tarjeta  
 {% endapi-method-summary %}
@@ -151,13 +161,13 @@ Email del usuario
         {
             "token": "5a3491f5-d90d-4085-901b-006bfac16ee2",
             "card_type": "Visa",
-            "last4CardDigits": "6623",
+            "last4CardDigits": "XXXXXXXXXXXX6623",
             "codigo_verificacion": "ZjgwOTdhMTUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWTRDjQ4ZjY0N2I3NQ"
         },
         {
             "token": "6a0a6931-af7c-4818-ada2-fff0d81e88ef",
             "card_type": "Visa",
-            "last4CardDigits": "6623",
+            "last4CardDigits": "XXXXXXXXXXXX6623",
             "codigo_verificacion": "ZjgwOTdhMTUtM2RiYy00N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWUyYjJ87Hg2I3NQ"
        
         }
