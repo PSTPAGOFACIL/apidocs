@@ -12,7 +12,7 @@ Beta: [https://api-app.pgf.cl/beta](https://api-app.pgf.cl/beta)
 
 Desarrollo: [https://api-app.pgf.cl/dev](https://api-app.pgf.cl/dev)
 
-{% api-method method="post" host=" https://api-app.pgf.cl/" path="transactions/getAll" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod​/" path="transactions/getAll" %}
 {% api-method-summary %}
 Obtener Transacciones
 {% endapi-method-summary %}
@@ -78,7 +78,7 @@ Transacciones del usuario
 
 * Para más información sobre como obtener el token revisar [Login](suscripciones.md#login)
 
-{% api-method method="post" host=" https://api-app.pgf.cl/" path="transactions/getBySubscription" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod​/" path="transactions/getBySubscription" %}
 {% api-method-summary %}
 Obtener transacciones por suscripción
 {% endapi-method-summary %}

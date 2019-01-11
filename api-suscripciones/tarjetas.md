@@ -21,7 +21,7 @@ Desarrollo: [https://api-app.pgf.cl/dev](https://api-app.pgf.cl/dev)
 | Mes de Expiración | Cualquiera |
 | CVV | 123 |
 
-{% api-method method="post" host=" https://api-app.pgf.cl/" path="user/registrar-tarjeta" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod​/" path="user/registrar-tarjeta" %}
 {% api-method-summary %}
 Registrar Tarjeta
 {% endapi-method-summary %}
@@ -112,7 +112,7 @@ Token de la tarjeta
 
 * Para más información sobre como obtener el token de la tarjeta revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
 
-{% api-method method="post" host=" https://api-app.pgf.cl/user/" path="getTarjetas" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/prod​/user/" path="getTarjetas" %}
 {% api-method-summary %}
 Obtener Tarjetas
 {% endapi-method-summary %}
@@ -183,7 +183,7 @@ Email del usuario
 
 * Para tener más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 
-{% api-method method="post" host=" https://api-app.pgf.cl/user" path="/estadoTarjeta" %}
+{% api-method method="post" host=" https://api-app.pgf.cl/prod​/user" path="/estadoTarjeta" %}
 {% api-method-summary %}
 Estado de tarjeta
 {% endapi-method-summary %}
@@ -239,7 +239,7 @@ Código de verificación de la tarjeta
 * Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 * Para mas información sobre como obtener el código de verificación revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
 
-{% api-method method="post" host=" https://api-app.pgf.cl/user" path="/cobrar" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod​/user" path="/cobrar" %}
 {% api-method-summary %}
 Realizar cobro
 {% endapi-method-summary %}
