@@ -6,11 +6,11 @@ description: Conexiones para administrar las tarjetas de los usuarios
 
 ### Endpoints
 
-Producción: [ https://api-app.pgf.cl/](%20https://api-app.pgf.cl/)
+Producción: [https://api-app.pgf.cl/prod](https://api-app.pgf.cl/prod)
 
-Beta: [ https://api-app-beta.pgf.cl/](%20https://api-app-beta.pgf.cl/)
+Beta: [https://api-app.pgf.cl/beta](https://api-app.pgf.cl/beta)
 
-Desarrollo: [ ](%20https://api-app.pgf.cl/)[ https://api-app-dev.pgf.cl/](%20https://api-app.pgf.cl/)
+Desarrollo: [https://api-app.pgf.cl/dev](https://api-app.pgf.cl/dev)
 
 ### Tarjetas de Prueba transbank
 

@@ -6,11 +6,11 @@ description: Conexiones a la API de suscripciones y de registros de tarjetas.
 
 ### Endpoints
 
-Producción: [https://api-app.pgf.cl](https://api-app.pgf.cl)
+Producción: [https://api-app.pgf.cl/prod](https://api-app.pgf.cl/prod)
 
-Beta: [https://api-app-beta.pgf.cl](https://api-app-beta.pgf.cl)
+Beta: [https://api-app.pgf.cl/beta](https://api-app.pgf.cl/beta)
 
-Desarrollo Suscripciones: [https//api-app-dev.pgf.cl](https://api-app-dev.pgf.cl)
+Desarrollo Suscripciones: [https://api-app.pgf.cl/dev](https://api-app.pgf.cl/dev)
 
 {% api-method method="post" host=" https://api-app.pgf.cl/" path="login" %}
 {% api-method-summary %}
