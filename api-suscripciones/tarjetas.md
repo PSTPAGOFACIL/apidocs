@@ -72,7 +72,7 @@ Código de comercio al cual se asociara la tarjeta. Este código se puede obtene
 * Para más información sobre como obtener el código de comercio revisar [Verificar Usuario Botón](suscripciones.md#verificar-usuario-y-boton)
 * Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
 
-{% api-method method="post" host="https://dusvl5v59l.execute-api.us-west-2.amazonaws.com/dev/" path="remove" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod​/user/" path="remove" %}
 {% api-method-summary %}
 Remover Tarjeta  
 {% endapi-method-summary %}
