@@ -93,6 +93,12 @@ Permite eliminar una tarjeta
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Token JWT de autorizacion
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter name="callbackUrl" type="string" required=true %}
 URL a la cuál se redireccionará al usuario una vez que se elimine la tarjeta.  Esta URL será llamada por método GET y se adicionará un código de verificación con el cual se puede obtener el estado de la tarjeta.  
