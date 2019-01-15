@@ -50,7 +50,7 @@ Luego de tener esta variable se crea una nueva transacción a la cual se le pasa
 $transaction = new Transaction($request); // Se crea la transaccion
 $transaction->environment = 'DESARROLLO'; // Se especifica el ambiente en el cual se va a trabajar, puede ser DESSARROLLO, BETA o PRODUCCION
 
-$transaction->setToken(''); // Se debe colocal el Token Secret entregado por Pago Facil
+$transaction->setToken(''); // Se debe colocar el Token Secret entregado por Pago Facil
 
 $transaction->initTransaction($request); // Se inicia la transaccion enviando por parametros el request creado
 ```
