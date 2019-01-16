@@ -88,8 +88,49 @@ Token JWT de autenticacion
 
 {% endapi-method-response-example-description %}
 
+```javascript
+{
+    "User": "USERID",
+    "access_token": "TUACCESSTOKEN",
+    "expiration_date": 1697730996,
+    "token_type": "Bearer"
+}
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
+{% api-method method="post" host="https://api-app.pgf.cl/prod/" path="loginToken" %}
+{% api-method-summary %}
+Login Token
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Permite realizar login mediante un token de acceso
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Token asociado a la cuenta \(Bearer\)
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "access_token_jwt": "TU JWT TOKEN",
+    "expires_in": 31536000,
+    "token_type": "Bearer"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
