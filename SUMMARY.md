@@ -19,8 +19,13 @@
 
 ## API SUSCRIPCIONES
 
-* [Botones de suscripciones](api-suscripciones/botones-de-suscripciones.md)
-* [Suscripciones](api-suscripciones/suscripciones.md)
-* [Tarjetas](api-suscripciones/tarjetas.md)
-* [Transacciones](api-suscripciones/transacciones.md)
+* [API Comercios](api-suscripciones/api-comercios/README.md)
+  * [Botones de suscripciones](api-suscripciones/api-comercios/botones-de-suscripciones.md)
+* [API Usuarios](api-suscripciones/api-usuarios/README.md)
+  * [Usuarios](api-suscripciones/api-usuarios/usuarios/README.md)
+    * [Registrar](api-suscripciones/api-usuarios/usuarios/registrar.md)
+    * [Login](api-suscripciones/api-usuarios/usuarios/login.md)
+  * [Suscripciones](api-suscripciones/api-usuarios/suscripciones.md)
+  * [Tarjetas](api-suscripciones/api-usuarios/tarjetas.md)
+  * [Transacciones](api-suscripciones/api-usuarios/transacciones.md)
 
