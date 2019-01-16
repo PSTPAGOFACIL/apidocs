@@ -64,6 +64,38 @@ Username o email del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://api-app.pgf.cl/prod/" path="tokens/createToken" %}
+{% api-method-summary %}
+Create Token
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Método que permite crear un token para poder iniciar sesion
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Token JWT de autenticacion
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="post" host=" https://api-app.pgf.cl/prod​/" path="registrar" %}
 {% api-method-summary %}
 Registrar usuario
