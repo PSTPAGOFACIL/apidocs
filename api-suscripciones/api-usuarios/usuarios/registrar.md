@@ -27,7 +27,14 @@ Username del usuario
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="password" type="string" required=true %}
-Password del usuario
+Password del usuario.   
+Debe cumplir los siguientes criterios:  
+  
+- Mínimo de 8 caracteres  
+- Al menos 1 caracter en minúscula \(a-z\)  
+- Al menos 1 caracter en mayúscula \(A-Z\)  
+- Al menos un numero \(0-9\)  
+- Al menos un caracter especial \(!@\#$%^&\*\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="rec\_nombre" type="string" required=false %}
