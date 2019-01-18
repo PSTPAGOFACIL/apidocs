@@ -10,3 +10,9 @@ description: Métodos para administración de usuarios
 * Beta: [https://api-app.pgf.cl/beta](https://api-app.pgf.cl/beta)
 * Desarrollo: [https://api-app.pgf.cl/dev](https://api-app.pgf.cl/dev)
 
+### Métodos disponibles
+
+{% page-ref page="registrar.md" %}
+
+{% page-ref page="login.md" %}
+
