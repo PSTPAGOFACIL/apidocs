@@ -76,7 +76,7 @@ Transacciones del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token revisar [Login](suscripciones.md#login)
+* Para más información sobre como obtener el token revisar [Login](suscripciones/#login)
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod​/" path="transactions/getBySubscription" %}
 {% api-method-summary %}
@@ -134,8 +134,8 @@ Token de la suscripción
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token de autorización revisar [Login](suscripciones.md#login)
-* Para más información sobre como obtener el id de suscripción revisar [Obtener Suscripciones](suscripciones.md#obtener-suscripciones)
+* Para más información sobre como obtener el token de autorización revisar [Login](suscripciones/#login)
+* Para más información sobre como obtener el id de suscripción revisar [Obtener Suscripciones](suscripciones/#obtener-suscripciones)
 
 
 

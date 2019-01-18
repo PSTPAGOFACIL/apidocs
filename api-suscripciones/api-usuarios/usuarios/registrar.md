@@ -1,3 +1,7 @@
+---
+description: Permite registrar un usuario en el sistema
+---
+
 # Registrar
 
 ### Endpoints
