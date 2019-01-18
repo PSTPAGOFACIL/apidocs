@@ -14,8 +14,6 @@ Para acceder a los métodos de la API es necesario tener un token JWT de autoriz
 
 {% page-ref page="../usuarios/login.md" %}
 
-* Para más información sobre como obtener el token de autorización revisar [Login](./#login)
-
 {% api-method method="post" host="https://api-app.pgf.cl/prod​/subscriptions" path="/create" %}
 {% api-method-summary %}
 Crear suscripción 
