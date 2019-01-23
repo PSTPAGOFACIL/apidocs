@@ -1,8 +1,8 @@
 ---
-description: Método que retorna una dirección en específico
+description: Método que permite eliminar una dirección
 ---
 
-# Obtener dirección
+# Eliminar Dirección
 
 ### Endpoints
 
@@ -10,9 +10,9 @@ description: Método que retorna una dirección en específico
 * Beta: [https://api-app.pgf.cl/beta](https://api-app.pgf.cl/beta)
 * Desarrollo: [https://api-app.pgf.cl/dev](https://api-app.pgf.cl/dev)
 
-{% api-method method="post" host="htps://api-app.pgf.cl/prod/" path="users/directions/getDirection" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod/" path="users/directions/delete" %}
 {% api-method-summary %}
-Obtener Dirección
+Eliminar Dirección
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -29,7 +29,7 @@ Token JWT de autorización
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="token" type="string" required=true %}
-Token de la dirección
+Token del dirección
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -42,15 +42,7 @@ Token de la dirección
 
 ```javascript
 {
-    "message": "Se encontró la dirección exitosamente",
-    "direccion": {
-        "idAuth0": "auth0|5g7745gt8u5a4cb52btc235a",
-        "token": "aa838fh2-6bef-4a52-ad48-6c7356701699",
-        "depto": "33",
-        "estado": "ACTIVO",
-        "ciudad": "Santiago",
-        "direccion": "Direccion 3"
-    }
+    message: "Se eliminó la dirección exitosamente"
 }
 ```
 {% endapi-method-response-example %}
@@ -62,7 +54,7 @@ Token de la dirección
 
 ```javascript
 {
-    "message": "Direccion no existe, esta deshabilitada o no tienes acceso"
+    message: "Error al eliminar la direccion"
 }
 ```
 {% endapi-method-response-example %}

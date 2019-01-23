@@ -14,65 +14,6 @@ Para acceder a los métodos de la API es necesario tener un token JWT de autoriz
 
 {% page-ref page="../usuarios/login.md" %}
 
-{% api-method method="post" host="https://api-app.pgf.cl/prod​/subscriptions" path="/create" %}
-{% api-method-summary %}
-Crear suscripción 
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Crea una suscripción asociada a un botón de suscripciones
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Token JWT de autorización
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="email" type="string" required=true %}
-Email del usuario
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="boton\_token" type="string" required=true %}
-Token del botón al cual va a estar asociada la suscripción
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "message": "Se creo la suscripcion"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    error: "Error al obtener las suscripciones por email"
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-* Para más información sobre como obtener el token de autorización revisar [Login](./#login)
-* Para más información sobre como obtener el boton\_token revisar [Obtener Botones](../../api-comercios/botones-de-suscripciones.md#obtener-botones-de-suscripcion)
-
 {% api-method method="post" host=" https://api-app.pgf.cl/prod​/subscriptions" path="/activar" %}
 {% api-method-summary %}
 Activar suscripción
