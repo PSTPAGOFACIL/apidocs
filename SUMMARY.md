@@ -27,6 +27,8 @@
     * [Login](api-suscripciones/api-usuarios/usuarios/login.md)
   * [Direcciones](api-suscripciones/api-usuarios/direcciones/README.md)
     * [Crear Dirección](api-suscripciones/api-usuarios/direcciones/crear-direccion.md)
+    * [Obtener todas las direcciones](api-suscripciones/api-usuarios/direcciones/obtener-direcciones.md)
+    * [Obtener dirección](api-suscripciones/api-usuarios/direcciones/obtener-direccion.md)
   * [Suscripciones](api-suscripciones/api-usuarios/suscripciones/README.md)
     * [Obtener Suscripciones](api-suscripciones/api-usuarios/suscripciones/obtener-suscripciones.md)
   * [Tarjetas](api-suscripciones/api-usuarios/tarjetas.md)
