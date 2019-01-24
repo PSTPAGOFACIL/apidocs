@@ -79,8 +79,8 @@ Código de comercio al cual se asociara la tarjeta. Este código se puede obtene
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el código de comercio revisar [Verificar Usuario Botón](suscripciones/#verificar-usuario-y-boton)
-* Para más información sobre como obtener el token de autorización revisar [Login](suscripciones/#login)
+* Para más información sobre como obtener el código de comercio revisar [Verificar Usuario Botón](../suscripciones/#verificar-usuario-y-boton)
+* Para más información sobre como obtener el token de autorización revisar [Login](../suscripciones/#login)
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod​/user/" path="remove-tarjeta" %}
 {% api-method-summary %}
@@ -126,7 +126,7 @@ Token de la tarjeta
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token de la tarjeta revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
+* Para más información sobre como obtener el token de la tarjeta revisar [Obtener Tarjetas](./#obtener-tarjetas)
 
 {% api-method method="post" host=" https://api-app.pgf.cl/prod​/user/" path="getTarjetas" %}
 {% api-method-summary %}
@@ -197,7 +197,7 @@ Email del usuario
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para tener más información sobre como obtener el token de autorización revisar [Login](suscripciones/#login)
+* Para tener más información sobre como obtener el token de autorización revisar [Login](../suscripciones/#login)
 
 {% api-method method="post" host=" https://api-app.pgf.cl/prod​/user" path="/estadoTarjeta" %}
 {% api-method-summary %}
@@ -252,8 +252,8 @@ Código de verificación de la tarjeta
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token de autorización revisar [Login](suscripciones/#login)
-* Para mas información sobre como obtener el código de verificación revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
+* Para más información sobre como obtener el token de autorización revisar [Login](../suscripciones/#login)
+* Para mas información sobre como obtener el código de verificación revisar [Obtener Tarjetas](./#obtener-tarjetas)
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod​/user" path="/cobrar" %}
 {% api-method-summary %}
@@ -317,7 +317,7 @@ Monto a cobrar.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token de autorización revisar [Login](suscripciones/#login)
-* Para más información sobre como obtener el código de verificación revisar [Obtener Tarjetas](tarjetas.md#obtener-tarjetas)
-* Para más información sobre como obtener el token de suscripción revisar[ Obtener Suscripciones](suscripciones/#obtener-suscripciones)
+* Para más información sobre como obtener el token de autorización revisar [Login](../suscripciones/#login)
+* Para más información sobre como obtener el código de verificación revisar [Obtener Tarjetas](./#obtener-tarjetas)
+* Para más información sobre como obtener el token de suscripción revisar[ Obtener Suscripciones](../suscripciones/#obtener-suscripciones)
 

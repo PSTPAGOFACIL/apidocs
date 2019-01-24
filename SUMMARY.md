@@ -25,6 +25,7 @@
   * [Usuarios](api-suscripciones/api-usuarios/usuarios/README.md)
     * [Registrar](api-suscripciones/api-usuarios/usuarios/registrar.md)
     * [Login](api-suscripciones/api-usuarios/usuarios/login.md)
+    * [Obtener Usuario](api-suscripciones/api-usuarios/usuarios/obtener-usuario.md)
   * [Direcciones](api-suscripciones/api-usuarios/direcciones/README.md)
     * [Crear Dirección](api-suscripciones/api-usuarios/direcciones/crear-direccion.md)
     * [Obtener todas las direcciones](api-suscripciones/api-usuarios/direcciones/obtener-direcciones.md)
@@ -33,6 +34,8 @@
   * [Suscripciones](api-suscripciones/api-usuarios/suscripciones/README.md)
     * [Crear Suscripción](api-suscripciones/api-usuarios/suscripciones/crear-suscripcion.md)
     * [Obtener Suscripciones](api-suscripciones/api-usuarios/suscripciones/obtener-suscripciones.md)
-  * [Tarjetas](api-suscripciones/api-usuarios/tarjetas.md)
+  * [Tarjetas](api-suscripciones/api-usuarios/tarjetas/README.md)
+    * [Obtener Tarjetas](api-suscripciones/api-usuarios/tarjetas/obtener-tarjetas.md)
+    * [Obtener Tarjeta](api-suscripciones/api-usuarios/tarjetas/obtener-tarjeta.md)
   * [Transacciones](api-suscripciones/api-usuarios/transacciones.md)
 

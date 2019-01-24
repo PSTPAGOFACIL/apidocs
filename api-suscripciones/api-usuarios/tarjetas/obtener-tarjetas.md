@@ -1,4 +1,8 @@
-# Crear Suscripción
+---
+description: Método que retorna todas las tarjetas activas de un usuario
+---
+
+# Obtener Tarjetas
 
 ### Endpoints
 
@@ -6,9 +10,9 @@
 * Beta: [https://api-app.pgf.cl/beta](https://api-app.pgf.cl/beta)
 * Desarrollo: [https://api-app.pgf.cl/dev](https://api-app.pgf.cl/dev)
 
-{% api-method method="post" host="https://api-app.pgf.cl/prod/" path="subscriptions/create" %}
+{% api-method method="post" host="https://api-app.pgf.cl/prod/" path="user/getTarjetas" %}
 {% api-method-summary %}
-/subscriptions/create
+/user/getTarjetas
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -27,10 +31,6 @@ Token JWT de autorización
 {% api-method-parameter name="email" type="string" required=true %}
 Email del usuario
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="boton\_token" type="string" required=true %}
-Token del botón asociado a la suscripción
-{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -42,7 +42,24 @@ Token del botón asociado a la suscripción
 
 ```javascript
 {
-    "message": "Se creo la suscripcion"
+    "responseCode": 2,
+    "message": "Se encontraron tarjetas",
+    "existe": true,
+    "tarjetas": [
+        {
+            "token": "5a3491f2-d90d-4085-901b-006bfac16ee2",
+            "card_type": "Visa",
+            "last4CardDigits": "XXXXXXXXXXXX6623",
+            "codigo_verificacion": "ZjgwOTdhMTUtM2RiYy40N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWTRDjQ4ZjY0N2I3NQ"
+        },
+        {
+            "token": "6a1a6931-af7c-4818-ada2-fff0d81e88ef",
+            "card_type": "Visa",
+            "last4CardDigits": "XXXXXXXXXXXX6623",
+            "codigo_verificacion": "ZjgwOTdhMTUtM2RiYy40N2QyLTkxMGYtZGQ0NzEyMTUyNWRkOmFmOGJlZWQ2LTcwMzMtNDc3NS1iOTI5LWTRDjQ4ZjY0N2I3NQ"
+       
+        }
+    ]
 }
 ```
 {% endapi-method-response-example %}
@@ -54,7 +71,7 @@ Token del botón asociado a la suscripción
 
 ```javascript
 {
-    error: "Error al crear la suscripción"
+    error: "Error al realizar la solicitud"
 }
 ```
 {% endapi-method-response-example %}
@@ -62,11 +79,7 @@ Token del botón asociado a la suscripción
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token de acceso sigue el link:
+* Para más información sobre como obtener el token de autorización sigue el siguiente link:
 
 {% page-ref page="../usuarios/login.md" %}
-
-* Para más información sobre como obtener el token del botón sigue el siguiente link:
-
-{% page-ref page="../../api-comercios/botones-de-suscripciones.md" %}
 

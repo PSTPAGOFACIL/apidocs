@@ -12,7 +12,7 @@ description: Método que permite eliminar una dirección
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod/" path="users/directions/delete" %}
 {% api-method-summary %}
-Eliminar Dirección
+/users/directions/delete
 {% endapi-method-summary %}
 
 {% api-method-description %}

@@ -16,7 +16,7 @@ Para acceder a los métodos de la API es necesario tener un token JWT de autoriz
 
 {% api-method method="post" host=" https://api-app.pgf.cl/prod​/subscriptions" path="/activar" %}
 {% api-method-summary %}
-Activar suscripción
+/subscriptions/activar
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -71,7 +71,7 @@ Token de la suscripción
 {% endapi-method %}
 
 * Para más información sobre como obtener el token de autorización revisar [Login](./#login)
-* Para más información sobre como obtener usuario\_oc\_token revisar[ Obtener Tarjetas](../tarjetas.md#obtener-tarjetas)
+* Para más información sobre como obtener usuario\_oc\_token revisar[ Obtener Tarjetas](../tarjetas/#obtener-tarjetas)
 * Para más información sobre como obtener el token de la suscripción revisar [Obtener Suscripciones](./#obtener-suscripciones)
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod​/subscriptions" path="/desactivar" %}

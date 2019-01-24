@@ -8,7 +8,7 @@
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod/" path="users/directions/create" %}
 {% api-method-summary %}
-Crear dirección
+/users/directions/create
 {% endapi-method-summary %}
 
 {% api-method-description %}

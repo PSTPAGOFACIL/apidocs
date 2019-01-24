@@ -13,7 +13,7 @@ El inicio de sesión como usuario se puede realizar de dos formas:
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod/" path="login" %}
 {% api-method-summary %}
-Login
+/login
 {% endapi-method-summary %}
 
 {% api-method-description %}

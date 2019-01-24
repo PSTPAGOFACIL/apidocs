@@ -12,7 +12,7 @@ description: Método que retorna todas las direcciones de un usuario
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod/" path="users/directions/getAll" %}
 {% api-method-summary %}
-Obtener Direcciones
+/users/directions/getAll
 {% endapi-method-summary %}
 
 {% api-method-description %}

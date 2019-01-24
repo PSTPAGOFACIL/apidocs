@@ -12,7 +12,7 @@ description: Método que retorna una dirección en específico
 
 {% api-method method="post" host="htps://api-app.pgf.cl/prod/" path="users/directions/getDirection" %}
 {% api-method-summary %}
-Obtener Dirección
+/users/directions/getDirection
 {% endapi-method-summary %}
 
 {% api-method-description %}

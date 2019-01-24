@@ -12,7 +12,7 @@ description: Permite registrar un usuario en el sistema
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod/" path="registrar" %}
 {% api-method-summary %}
-Registrar
+/registrar
 {% endapi-method-summary %}
 
 {% api-method-description %}

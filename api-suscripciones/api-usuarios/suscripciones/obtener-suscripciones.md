@@ -12,7 +12,7 @@ description: Método que permite obtener las suscripciones de un usuario
 
 {% api-method method="post" host="https://api-app.pgf.cl/prod/" path="subscriptions/getAll" %}
 {% api-method-summary %}
-Obtener Suscripciones
+/subscriptions/getAll
 {% endapi-method-summary %}
 
 {% api-method-description %}
