@@ -39,3 +39,8 @@
     * [Obtener Tarjeta](api-suscripciones/api-usuarios/tarjetas/obtener-tarjeta.md)
   * [Transacciones](api-suscripciones/api-usuarios/transacciones.md)
 
+## API Abonos
+
+* [Obtener Abonos](api-abonos/obtener-abonos.md)
+* [Obtener abonos de un dia](api-abonos/obtener-abonos-de-un-dia.md)
+
