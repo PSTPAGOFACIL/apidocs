@@ -34,6 +34,7 @@
   * [Suscripciones](api-suscripciones/api-usuarios/suscripciones/README.md)
     * [Crear Suscripción](api-suscripciones/api-usuarios/suscripciones/crear-suscripcion.md)
     * [Obtener Suscripciones](api-suscripciones/api-usuarios/suscripciones/obtener-suscripciones.md)
+    * [Activar Suscripción](api-suscripciones/api-usuarios/suscripciones/activar-suscripcion.md)
   * [Tarjetas](api-suscripciones/api-usuarios/tarjetas/README.md)
     * [Obtener Tarjetas](api-suscripciones/api-usuarios/tarjetas/obtener-tarjetas.md)
     * [Obtener Tarjeta](api-suscripciones/api-usuarios/tarjetas/obtener-tarjeta.md)

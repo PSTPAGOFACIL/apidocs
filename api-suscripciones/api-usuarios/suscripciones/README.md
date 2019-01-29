@@ -14,66 +14,6 @@ Para acceder a los métodos de la API es necesario tener un token JWT de autoriz
 
 {% page-ref page="../usuarios/login.md" %}
 
-{% api-method method="post" host=" https://api-app.pgf.cl/prod​/subscriptions" path="/activar" %}
-{% api-method-summary %}
-/subscriptions/activar
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Permite activar una suscripción indicando la tarjeta a usar
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Token JWT de autorización
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="usuario\_oc\_token" type="string" required=true %}
-Token de la tarjeta a la cual se va a asociar la transacción
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="token" type="string" required=true %}
-Token de la suscripción
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    message: "Se activo la suscripcion"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    error: "no se pudo realizar la solicitud"
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-* Para más información sobre como obtener el token de autorización revisar [Login](./#login)
-* Para más información sobre como obtener usuario\_oc\_token revisar[ Obtener Tarjetas](../tarjetas/#obtener-tarjetas)
-* Para más información sobre como obtener el token de la suscripción revisar [Obtener Suscripciones](./#obtener-suscripciones)
-
 {% api-method method="post" host="https://api-app.pgf.cl/prod​/subscriptions" path="/desactivar" %}
 {% api-method-summary %}
 Desactivar suscripción
