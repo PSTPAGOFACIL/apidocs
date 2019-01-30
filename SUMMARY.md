@@ -38,8 +38,13 @@
     * [Activar Suscripción](api-suscripciones/api-usuarios/suscripciones/activar-suscripcion.md)
     * [Desactivar Suscripción](api-suscripciones/api-usuarios/suscripciones/desactivar-suscripcion.md)
   * [Tarjetas](api-suscripciones/api-usuarios/tarjetas/README.md)
+    * [Verificar Usuario Botón](api-suscripciones/api-usuarios/tarjetas/verificar-usuario-boton.md)
     * [Obtener Tarjetas](api-suscripciones/api-usuarios/tarjetas/obtener-tarjetas.md)
     * [Obtener Tarjeta](api-suscripciones/api-usuarios/tarjetas/obtener-tarjeta.md)
+    * [Registrar Tarjeta](api-suscripciones/api-usuarios/tarjetas/registrar-tarjeta.md)
+    * [Remover Tarjeta](api-suscripciones/api-usuarios/tarjetas/remover-tarjeta.md)
+    * [Estado de Tarjeta](api-suscripciones/api-usuarios/tarjetas/estado-de-tarjeta.md)
+    * [Realizar cobro](api-suscripciones/api-usuarios/tarjetas/realizar-cobro.md)
   * [Transacciones](api-suscripciones/api-usuarios/transacciones.md)
 
 ## API Abonos

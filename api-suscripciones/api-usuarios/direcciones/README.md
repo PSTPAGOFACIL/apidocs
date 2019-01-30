@@ -14,3 +14,13 @@ Para acceder a los métodos de la API es necesario tener un token JWT de autoriz
 
 {% page-ref page="../usuarios/login.md" %}
 
+### Métodos disponibles
+
+{% page-ref page="crear-direccion.md" %}
+
+{% page-ref page="obtener-direcciones.md" %}
+
+{% page-ref page="obtener-direccion.md" %}
+
+{% page-ref page="eliminar-direccion.md" %}
+

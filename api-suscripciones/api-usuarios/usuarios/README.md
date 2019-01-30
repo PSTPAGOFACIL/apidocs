@@ -16,3 +16,7 @@ description: Métodos para administración de usuarios
 
 {% page-ref page="login.md" %}
 
+{% page-ref page="recuperar-contrasena.md" %}
+
+{% page-ref page="obtener-usuario.md" %}
+
