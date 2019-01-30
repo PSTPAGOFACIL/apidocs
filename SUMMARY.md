@@ -25,6 +25,7 @@
   * [Usuarios](api-suscripciones/api-usuarios/usuarios/README.md)
     * [Registrar](api-suscripciones/api-usuarios/usuarios/registrar.md)
     * [Login](api-suscripciones/api-usuarios/usuarios/login.md)
+    * [Recuperar Contraseña](api-suscripciones/api-usuarios/usuarios/recuperar-contrasena.md)
     * [Obtener Usuario](api-suscripciones/api-usuarios/usuarios/obtener-usuario.md)
   * [Direcciones](api-suscripciones/api-usuarios/direcciones/README.md)
     * [Crear Dirección](api-suscripciones/api-usuarios/direcciones/crear-direccion.md)
