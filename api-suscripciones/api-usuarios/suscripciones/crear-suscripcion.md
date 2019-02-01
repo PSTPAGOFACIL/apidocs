@@ -24,6 +24,22 @@ Token JWT de autorización
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="direccion\_token" type="string" required=false %}
+Token de la dirección
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="variacion\_id" type="string" required=false %}
+ID de la variación  
+  
+**EN CASO DE QUE EL BOTÓN SEA TIPO RECURRENTE VARIABLE EL CAMPO ES OBLIGATORIO**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="producto\_id" type="string" required=false %}
+ID del producto  
+  
+**EN CASO DE QUE EL BOTÓN SEA TIPO RECURRENTE VARIABLE EL CAMPO ES OBLIGATORIO**
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="email" type="string" required=true %}
 Email del usuario
 {% endapi-method-parameter %}
