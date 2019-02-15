@@ -22,6 +22,8 @@
 * [API Comercios](api-suscripciones/api-comercios/README.md)
   * [Botones de suscripciones](api-suscripciones/api-comercios/botones-de-suscripciones.md)
 * [API Usuarios](api-suscripciones/api-usuarios/README.md)
+  * [Generales](api-suscripciones/api-usuarios/generales/README.md)
+    * [Obtener Código Postal](api-suscripciones/api-usuarios/generales/obtener-codigo-postal.md)
   * [Usuarios](api-suscripciones/api-usuarios/usuarios/README.md)
     * [Registrar](api-suscripciones/api-usuarios/usuarios/registrar.md)
     * [Login](api-suscripciones/api-usuarios/usuarios/login.md)

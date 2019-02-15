@@ -1,0 +1,6 @@
+---
+description: Métodos generales
+---
+
+# Generales
+
