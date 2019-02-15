@@ -24,3 +24,5 @@ Para acceder a los métodos de la API es necesario tener un token JWT de autoriz
 
 {% page-ref page="desactivar-suscripcion.md" %}
 
+{% page-ref page="cambiar-direccion-de-la-suscripcion.md" %}
+

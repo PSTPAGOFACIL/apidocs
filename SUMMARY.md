@@ -37,6 +37,7 @@
     * [Obtener Suscripciones](api-suscripciones/api-usuarios/suscripciones/obtener-suscripciones.md)
     * [Activar Suscripción](api-suscripciones/api-usuarios/suscripciones/activar-suscripcion.md)
     * [Desactivar Suscripción](api-suscripciones/api-usuarios/suscripciones/desactivar-suscripcion.md)
+    * [Cambiar dirección de la suscripción](api-suscripciones/api-usuarios/suscripciones/cambiar-direccion-de-la-suscripcion.md)
   * [Tarjetas](api-suscripciones/api-usuarios/tarjetas/README.md)
     * [Verificar Usuario Botón](api-suscripciones/api-usuarios/tarjetas/verificar-usuario-boton.md)
     * [Obtener Tarjetas](api-suscripciones/api-usuarios/tarjetas/obtener-tarjetas.md)
