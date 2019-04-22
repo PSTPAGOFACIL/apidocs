@@ -116,7 +116,7 @@ Este endpoint retorna el estado de una orden si es que esta existe y tienes auto
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="number" required=false %}
+{% api-method-parameter name="id" type="number" required=true %}
 Corresponde al ID de la transacción en Pago Fácil
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}

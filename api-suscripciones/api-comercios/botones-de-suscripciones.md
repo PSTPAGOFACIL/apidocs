@@ -13,7 +13,7 @@ description: Conexiones para administrar los botones de suscripciones
 
 Para crear un nuevo botón de suscripciones primero se debe hacer login como comercio. Para tener mayor información sobre como realizar el login mediante API revisar la documentación en el siguiente link
 
-{% page-ref page="../../api-usuario/login.md" %}
+{% page-ref page="../../api-comercios/login.md" %}
 
 {% api-method method="post" host="https://api.pgf.cl/subscription/" path="create-button" %}
 {% api-method-summary %}
@@ -109,8 +109,8 @@ Token que se genera al hacer llamado a la función de crear token. Para mas info
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token de autorización revisar [Login](../../api-usuario/login.md#login-1)
-* Para más información sobre como obtener el access\_token revisar [Create Token](../../api-usuario/tokens.md#createtoken)
+* Para más información sobre como obtener el token de autorización revisar [Login](../../api-comercios/login.md#login-1)
+* Para más información sobre como obtener el access\_token revisar [Create Token](../../api-comercios/tokens.md#createtoken)
 
 {% api-method method="post" host="https://api.pgf.cl/subscription/" path="getAllButtons" %}
 {% api-method-summary %}
@@ -179,7 +179,7 @@ ID del servicio en Pago Fácil
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* Para más información sobre como obtener el token de autorización revisar [Login](../../api-usuario/login.md#login-1)
+* Para más información sobre como obtener el token de autorización revisar [Login](../../api-comercios/login.md#login-1)
 
 
 

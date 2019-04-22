@@ -8,16 +8,16 @@ description: >-
 
 ### Como obtener los Tokens JWT
 
-Los tokens pueden  JWT pueden ser obtenidos a través de un API Call a login a usando usuario y clave o con un token de autentificación creado previamente. Estos tokens de autentificación deben de ser creados previamente en el dashboard, o pueden ser creados y eliminados a través del API.
+Los tokens  JWT pueden ser obtenidos a través de un API Call a login usando usuario y clave o con un token de autentificación creado previamente. Estos tokens de autentifcación deben de ser creados previamente en el dashboard, o pueden ser creados  a través del API.
 
 ### Endpoints
 
-* https://api.pgf.cl Para Producción
-* https://api-dev.pgf.cl Para Desarrollo
+* Producción: [https://api.pgf.cl ](https://api.pgf.cl)
+* Desarrollo: [https://api-dev.pgf.cl](https://api-dev.pgf.cl)
 
 ## Login
 
-Como mencionamos, se puede ingresar al sistema de dos maneras. Usando el login con usuario y clave, o a través de los tokens de autenticación. Sin embargo, el login usando usuario y clave tiene un tiempo de vida de 24 horas, mientras que el usando tokens es válido por el periodo determinado por el usuario.
+Como mencionamos, se puede ingresar al sistema de dos maneras. Usando el login con usuario y clave, o a través de los tokens de autentificación. Sin embargo, el login usando usuario y clave tiene un tiempo de vida de 24 horas, mientras que el usando tokens es válido por el periodo determinado por el usuario.
 
 {% api-method method="post" host="https://api.pgf.cl" path="/login" %}
 {% api-method-summary %}
@@ -72,6 +72,8 @@ No se pudo validar la combinación email/username con la clave.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+#### Ejemplos
 
 {% code-tabs %}
 {% code-tabs-item title="Ejemplo de conexión usando CURL" %}
@@ -180,7 +182,7 @@ Fecha en UNIX TIMESTAMP hasta cuando será valido el token JWT. De no ser especi
 El caso de éxito responde el token que ocuparemos y en cuanto tiempo expirará.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "access_token_jwt": "TU JWT TOKEN",
     "expires_in": 31536000,
@@ -194,7 +196,7 @@ El caso de éxito responde el token que ocuparemos y en cuanto tiempo expirará.
 Si el token usado en la autorización no es válido.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "error": "Invalid Authorization Header"
 }
@@ -206,7 +208,7 @@ Si el token usado en la autorización no es válido.
 Si el token no está habilitado o si está expirado.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "error": "Not a valid or expired token"
 }
@@ -215,6 +217,8 @@ Si el token no está habilitado o si está expirado.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+#### Ejemplos
 
 {% code-tabs %}
 {% code-tabs-item title="Curl" %}

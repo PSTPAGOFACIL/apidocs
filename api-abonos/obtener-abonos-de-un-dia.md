@@ -73,5 +73,5 @@ Cantidad de registros a buscar, por defecto es 10
 
 * Para más información sobre como obtener el token de autorización sigue el siguiente link:
 
-{% page-ref page="../api-usuario/login.md" %}
+{% page-ref page="../api-comercios/login.md" %}
 

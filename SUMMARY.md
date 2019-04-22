@@ -7,10 +7,10 @@
 * [SDKs](sdks/README.md)
   * [PHP](sdks/php.md)
 
-## API USUARIO
+## API COMERCIOS
 
-* [Login](api-usuario/login.md)
-* [Tokens de Autenticación](api-usuario/tokens.md)
+* [Login](api-comercios/login.md)
+* [Tokens de Autenticación](api-comercios/tokens.md)
 
 ## API Transaccional
 

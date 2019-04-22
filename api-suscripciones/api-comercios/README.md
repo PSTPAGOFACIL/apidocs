@@ -13,7 +13,7 @@ description: Conexiones a la API de suscripciones como comercio
 
 Para acceder a los métodos de esta API se debe realizar login como comercio. Para más información sobre los métodos de inicio de sesión seguir el siguiente link
 
-{% page-ref page="../../api-usuario/login.md" %}
+{% page-ref page="../../api-comercios/login.md" %}
 
 ### Secciones API
 

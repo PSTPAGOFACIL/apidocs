@@ -56,5 +56,70 @@ No pudo ser verificado tu token de acceso JWT.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+#### Ejemplos
+
+{% code-tabs %}
+{% code-tabs-item title="CURL" %}
+```bash
+curl -X POST \
+  https://api.pgf.cl/tokens/createToken \
+  -H 'Authorization: Bearer TUACCESSTOKEN' \
+  -H 'Cache-Control: no-cache' 
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="PHP" %}
+```php
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://api.pgf.cl/tokens/createToken",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_HTTPHEADER => array(
+    "Authorization: Bearer TUACCESSTOKEN",
+    "Cache-Control: no-cache"
+  ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title=undefined %}
+```javascript
+const request = require("request");
+
+let options = { method: 'POST',
+  url: 'https://api.pgf.cl/tokens/createToken',
+  headers: 
+   { 'Cache-Control': 'no-cache',
+     Authorization: 'Bearer TUACCESSTOKEN' } };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 
 
