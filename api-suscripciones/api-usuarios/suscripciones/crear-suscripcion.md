@@ -58,7 +58,8 @@ Token del botón asociado a la suscripción
 
 ```javascript
 {
-    "message": "Se creo la suscripcion"
+    "message": "Se creo la suscripcion",
+    "token": "17dd41e0-f399-45b0-953b-7b652a8f4f7a"
 }
 ```
 {% endapi-method-response-example %}
