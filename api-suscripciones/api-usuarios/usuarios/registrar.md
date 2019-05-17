@@ -86,19 +86,6 @@ RUT del usuario
 }
 ```
 {% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=409 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-    statusCode: 409,
-    message: "Usuario ya existe"
-}
-```
-{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
