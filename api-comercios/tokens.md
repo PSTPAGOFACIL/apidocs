@@ -19,7 +19,7 @@ Este endpoint permite crear un Access Token con el que podemos loguearnos en el 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Un Token JWT Válido asociado a tu usuario en Pago Fácil.  \)\(Bearer\).
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
