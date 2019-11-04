@@ -2,7 +2,9 @@
 
 ## ¿ Cómo funciona ?
 
-Para validar que la información sea enviada desde la persona que corresponda, esta se verifica a través de una firma generada por el algoritomo  [HMAC SHA256](https://es.wikipedia.org/wiki/HMAC#Ejemplos_de_HMAC_%28MD5,_SHA1,_SHA256%29). Para generar esta firma se necesita una "**Clave Secreta**" que es proporcionada al generar el servicio en Pago Fácil. Cómo bien dice su nombre, esta clave es secreta y no debe de ser compartida con nadie, ya que esto podría causar que la información del estado de la transacción no sea fidedigna hacia el comercio.
+Para validar que la información sea enviada desde la persona que corresponda, esta se verifica a través de una firma generada por el algoritomo  [HMAC SHA256](https://es.wikipedia.org/wiki/HMAC#Ejemplos_de_HMAC_%28MD5,_SHA1,_SHA256%29). Para generar esta firma se necesita una "**Clave Secreta**" que es creada al generar el servicio en Pago Fácil. 
+
+Cómo bien dice su nombre, esta clave **ES SECRETA** y **no debe ser compartida con nadie**, ya que esto podría causar que la información del estado de la transacción no sea fidedigna hacia el comercio.
 
 {% hint style="warning" %}
 Este proceso no es complejo pero es importante seguir los pasos en orden para que no se vuelva frustrante.
@@ -10,7 +12,7 @@ Este proceso no es complejo pero es importante seguir los pasos en orden para qu
 
 #### Proceso
 
-1. Se debe de obtener un arreglo con todos las variables que comiencen con x\_ desde el body del POST \(AKA: Payload.\)
+1. Se debe de obtener un arreglo con todAs las variables que comiencen con x\_ desde el body del POST \(AKA: Payload.\)
 2. Este arreglo se debe de ordenar de manera alfabética.
 3. Una vez obtenido el arreglo, se crea un string con todas las variables y sus valores concatenados.
 4. El string resultando se firma con el algoritmo SHA256 mencionado anteriormente.
@@ -26,18 +28,17 @@ Este proceso no es complejo pero es importante seguir los pasos en orden para qu
 ### Ejemplo en JavaScript
 
 ```javascript
-//Recuerda que el arreglo siempre debe de estar ordenado antes de firmar.
-let sortedArray = Object.entries(payload).sort();
-
 function signPayload(payload, secret, prefix = "x_", signature = "signature") {
-    console.log("signPayload");
-    let payloadFirmado;
+    //El arreglo SIEMPRE debe de estar ordenado antes de firmar.
+    let sortedArray = Object.entries(payload).sort();
+    
+    let payloadFirmado = "";
     let firma = prefix + signature;
     let mensaje = "";
-    for (let index = 0; index < payload.length; index++) {
-        console.log(payload[index]);
-        if (payload[index][0] != firma) {
-            mensaje += payload[index][0] + payload[index][1];
+    for (let index = 0; index < sortedArray.length; index++) {
+        console.log(sortedArray[index]);
+        if (sortedArray[index][0] != firma) {
+            mensaje += sortedArray[index][0] + sortedArray[index][1];
         }
     }
     let hmac = crypto.createHmac('sha256', secret);
