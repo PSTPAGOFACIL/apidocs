@@ -2,7 +2,7 @@
 
 ## ¿ Cómo funciona ?
 
-Para validar que la información sea enviada desde la persona que corresponda, esta se verifica a través de una firma generada por el algoritomo  [HMAC SHA256](https://es.wikipedia.org/wiki/HMAC#Ejemplos_de_HMAC_%28MD5,_SHA1,_SHA256%29). Para generar esta firma se necesita una "**Clave Secreta**" que es creada al generar el servicio en Pago Fácil. 
+Para validar que la información sea enviada desde la persona que corresponda, esta se verifica a través de una firma generada por el algoritomo  [HMAC SHA256](https://es.wikipedia.org/wiki/HMAC#Ejemplos_de_HMAC_%28MD5,_SHA1,_SHA256%29). Para generar esta firma se necesita una "**Clave Secreta**" que es generada al crear el servicio en Pago Fácil. 
 
 Cómo bien dice su nombre, esta clave **ES SECRETA** y **no debe ser compartida con nadie**, ya que esto podría causar que la información del estado de la transacción no sea fidedigna hacia el comercio.
 
@@ -12,10 +12,10 @@ Este proceso no es complejo pero es importante seguir los pasos en orden para qu
 
 #### Proceso
 
-1. Se debe de obtener un arreglo con todAs las variables que comiencen con x\_ desde el body del POST \(AKA: Payload.\)
+1. Se debe de obtener un arreglo con todas las variables que comiencen con x\_ desde el body del POST \(AKA: Payload.\)
 2. Este arreglo se debe de ordenar de manera alfabética.
 3. Una vez obtenido el arreglo, se crea un string con todas las variables y sus valores concatenados.
-4. El string resultando se firma con el algoritmo SHA256 mencionado anteriormente.
+4. El string resultante se firma con el algoritmo SHA256 mencionado anteriormente.
 
 ### Ejemplo en Ruby
 
