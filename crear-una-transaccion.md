@@ -10,21 +10,106 @@ Con este endpoint se inicializa una transacción a través de un método post ge
 
 #### Request initTransaction
 
-| **Variable** | **Requerida** | **Tipo** | **Descripción** |
-| :--- | :--- | :--- | :--- |
-| x\_account\_id | Si | String | Corresponde al Token Service relacionado al servicio con el que deseas generar el cobro. |
-| x\_amount | Si | Number | Monto de la transacción. Admite decimales si la divisa utilizada los utiliza. |
-| x\_currency | SI | String | Divisa que se utilizará para la transacción. Ejemplo ; CLP, USD, BOB. |
-| x\_reference | SI | String | "Tú" número de orden. Esté número debería ser único por servicio para no tener problema de duplicidad de pagos. |
-| x\_customer\_email | SI | String | Correo en dónde se enviará la confirmación de pago al cliente. |
-| x\_url\_complete | SI | String | Dirección en dónde se redireccionará al momento de completar la transacción. Se enviará un POST a esta URL con los mismos datos del callback explicado en la sección response. |
-| x\_url\_cancel | SI | String | Dirección en dónde se redireccionará en caso de cancelación. Se recomienda usar la dirección del carrito de compras. |
-| x\_url\_callback | SI | String | Dirección en donde se avisará de los cambios en la transacción de manera asincrónica a través de un método POST. |
-| x\_signature | SI | String | Mensaje Firmado. Por favor revisa la sección de [firmado](proceso-de-firmado.md#proceso) para saber como generarla. |
-| x\_shop\_country | SI | [iso-3166-1alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1) | Por ejemplo CL // US  |
-| x\_session\_id | SI | String | Identificador único de la sesión del usuario que realiza el pago. Se agrega como capa de seguridad para validar la transacción. Max. 61 caracteres. |
-
-### Response initTransaction.
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Variable</b>
+      </th>
+      <th style="text-align:left"><b>Requerida</b>
+      </th>
+      <th style="text-align:left"><b>Tipo</b>
+      </th>
+      <th style="text-align:left"><b>Descripci&#xF3;n</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">x_account_id</td>
+      <td style="text-align:left">Si</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Corresponde al Token Service relacionado al servicio con el que deseas
+        generar el cobro.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_amount</td>
+      <td style="text-align:left">Si</td>
+      <td style="text-align:left">Number</td>
+      <td style="text-align:left">Monto de la transacci&#xF3;n. Admite decimales si la divisa utilizada
+        los utiliza.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_currency</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left"><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO_4217</a>
+      </td>
+      <td style="text-align:left">
+        <p>Divisa que se utilizar&#xE1; para la transacci&#xF3;n.</p>
+        <p>Ejemplo: CLP, USD, BOB.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_reference</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">&quot;T&#xFA;&quot; n&#xFA;mero de orden. Est&#xE9; n&#xFA;mero deber&#xED;a
+        ser &#xFA;nico por servicio para no tener problema de duplicidad de pagos.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_customer_email</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Correo en d&#xF3;nde se enviar&#xE1; la confirmaci&#xF3;n de pago al cliente.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_url_complete</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Direcci&#xF3;n en d&#xF3;nde se redireccionar&#xE1; al momento de completar
+        la transacci&#xF3;n. Se enviar&#xE1; un POST a esta URL con los mismos
+        datos del callback explicado en la secci&#xF3;n response.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_url_cancel</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Direcci&#xF3;n en d&#xF3;nde se redireccionar&#xE1; en caso de cancelaci&#xF3;n.
+        Se recomienda usar la direcci&#xF3;n del carrito de compras.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_url_callback</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Direcci&#xF3;n en donde se avisar&#xE1; de los cambios en la transacci&#xF3;n
+        de manera asincr&#xF3;nica a trav&#xE9;s de un m&#xE9;todo POST.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_signature</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Mensaje Firmado. Por favor revisa la secci&#xF3;n de <a href="proceso-de-firmado.md#proceso">firmado</a> para
+        saber como generarla.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_shop_country</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left"><a href="https://en.wikipedia.org/wiki/ISO_3166-1">iso-3166-1alpha-2</a>
+      </td>
+      <td style="text-align:left">
+        <p>Divisa que utiliza la tienda.</p>
+        <p>Por ejemplo: CL, US.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">x_session_id</td>
+      <td style="text-align:left">SI</td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">Identificador &#xFA;nico de la sesi&#xF3;n del usuario que realiza el
+        pago. Se agrega como capa de seguridad para validar la transacci&#xF3;n.
+        Max. 61 caracteres.</td>
+    </tr>
+  </tbody>
+</table>### Response initTransaction.
 
 El response se ejecuta en dos ocasiones; como callback por detrás del flujo de pago hacia la url designada con este fin, además de al volver a la url complete también designada. Si bien no es necesario que verifiques la información en los dos momentos, lo recomendamos.
 
