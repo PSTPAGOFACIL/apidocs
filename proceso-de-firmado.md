@@ -25,9 +25,13 @@ Este proceso no es complejo pero es importante seguir los pasos en orden para qu
   end
 ```
 
-### Ejemplo en JavaScript
+### Ejemplo en JavaScript \(crypto\)
 
 ```javascript
+const crypto = require('crypto');
+/*
+ ...
+*/
 function signPayload(payload, secret, prefix = "x_", signature = "signature") {
     //El arreglo SIEMPRE debe de estar ordenado antes de firmar.
     let sortedArray = Object.entries(payload).sort();
