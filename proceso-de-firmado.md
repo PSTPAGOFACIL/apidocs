@@ -53,6 +53,10 @@ function signPayload(payload, secret, prefix = "x_", signature = "signature") {
 ### Ejemplo en Javascript \(crypto-js\)
 
 ```php
+const crypto = require('crypto-js');
+/*
+ ...
+*/
 function signPayload(payload, secret, prefix = "x_", signature = "signature") {
     //El arreglo SIEMPRE debe de estar ordenado antes de firmar.
     let sortedArray = Object.entries(payload).sort();
