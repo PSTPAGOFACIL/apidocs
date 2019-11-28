@@ -75,8 +75,7 @@ No se pudo validar la combinación email/username con la clave.
 
 #### Ejemplos
 
-{% code-tabs %}
-{% code-tabs-item title="Ejemplo de conexión usando CURL" %}
+{% code title="Ejemplo de conexión usando CURL" %}
 ```bash
 curl -X POST \
   https://api.pgf.cl/login \
@@ -87,11 +86,9 @@ curl -X POST \
 	"password" : "MICLAVE"
 }'
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Ejemplo usando Javascript." %}
+{% code title="Ejemplo usando Javascript." %}
 ```javascript
 var request = require("request");
 
@@ -112,11 +109,9 @@ request(options, function (error, response, body) {
 });
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Ejemplo usando PHP" %}
+{% code title="Ejemplo usando PHP" %}
 ```php
 <?php
 
@@ -149,8 +144,7 @@ if ($err) {
   echo $response;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% api-method method="post" host="https://api.pgf.cl" path="/loginToken" %}
 {% api-method-summary %}
@@ -220,19 +214,16 @@ Si el token no está habilitado o si está expirado.
 
 #### Ejemplos
 
-{% code-tabs %}
-{% code-tabs-item title="Curl" %}
+{% code title="Curl" %}
 ```bash
 curl -X POST \
   https://api.pgf.cl/loginToken \
   -H 'Authorization: Bearer TUACCESSTOKEN' \
   -H 'Cache-Control: no-cache' 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="JavaScript" %}
+{% code title="JavaScript" %}
 ```javascript
 var request = require("request");
 
@@ -249,11 +240,9 @@ request(options, function (error, response, body) {
 });
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="PHP" %}
+{% code title="PHP" %}
 ```php
 <?php
 
@@ -285,6 +274,5 @@ if ($err) {
   echo $response;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

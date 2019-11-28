@@ -58,17 +58,17 @@ No pudo ser verificado tu token de acceso JWT.
 
 #### Ejemplos
 
-{% code-tabs %}
-{% code-tabs-item title="CURL" %}
+{% tabs %}
+{% tab title="CURL" %}
 ```bash
 curl -X POST \
   https://api.pgf.cl/tokens/createToken \
   -H 'Authorization: Bearer TUACCESSTOKEN' \
   -H 'Cache-Control: no-cache' 
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="PHP" %}
+{% tab title="PHP" %}
 ```php
 <?php
 
@@ -99,9 +99,9 @@ if ($err) {
   echo $response;
 }
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title=undefined %}
+{% tab title="JavaScript" %}
 ```javascript
 const request = require("request");
 
@@ -118,8 +118,8 @@ request(options, function (error, response, body) {
 });
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 
 

@@ -50,6 +50,28 @@ function signPayload(payload, secret, prefix = "x_", signature = "signature") {
 }
 ```
 
+### Ejemplo en Javascript \(crypto-js\)
+
+```php
+function signPayload(payload, secret, prefix = "x_", signature = "signature") {
+    //El arreglo SIEMPRE debe de estar ordenado antes de firmar.
+    let sortedArray = Object.entries(payload).sort();
+    
+    let payloadFirmado = "";
+    let firma = prefix + signature;
+    let mensaje = "";
+    for (let index = 0; index < sortedArray.length; index++) {
+        console.log(sortedArray[index]);
+        if (sortedArray[index][0] != firma) {
+            mensaje += sortedArray[index][0] + sortedArray[index][1];
+        }
+    }
+    let hash = crypto.HmacSHA256(mensaje, secret);
+    payloadFirmado = hash.toString(crypto.enc.Hex);
+    return payloadFirmado;
+}
+```
+
 ### Ejemplo en PHP
 
 ```php
